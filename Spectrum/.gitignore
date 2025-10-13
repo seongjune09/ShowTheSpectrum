@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# MFS
+.DS_Store
+Arduino IDE 2.3.6-arm64
