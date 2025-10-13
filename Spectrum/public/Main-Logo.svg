@@ -1,0 +1,42 @@
+<svg viewBox="0 50 200 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#E9A5A5;stop-opacity:0.6" />
+            <stop offset="100%" style="stop-color:#F4C5A5;stop-opacity:0.6" />
+        </linearGradient>
+        <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#F4D9A6;stop-opacity:0.65" />
+            <stop offset="100%" style="stop-color:#E9D4A6;stop-opacity:0.65" />
+        </linearGradient>
+        <linearGradient id="bar3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#B5E7D3;stop-opacity:0.7" />
+            <stop offset="100%" style="stop-color:#A5DCC8;stop-opacity:0.7" />
+        </linearGradient>
+        <linearGradient id="bar4" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#B5D9F4;stop-opacity:0.75" />
+            <stop offset="100%" style="stop-color:#A5CEE9;stop-opacity:0.75" />
+        </linearGradient>
+        <linearGradient id="mainBlock" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#D1B5E7;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#F4B5E0;stop-opacity:1" />
+        </linearGradient>
+        <filter id="softShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="0" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <rect x="35" y="55" width="130" height="26" fill="url(#bar1)" rx="13"/>
+    <rect x="42" y="72" width="130" height="26" fill="url(#bar2)" rx="13"/>
+    <rect x="50" y="89" width="130" height="26" fill="url(#bar3)" rx="13"/>
+    <rect x="58" y="106" width="130" height="26" fill="url(#bar4)" rx="13"/>
+    
+    <rect x="115" y="83" width="65" height="65" fill="url(#mainBlock)" rx="12" filter="url(#softShadow)"/>
+    <text x="147.5" y="125" text-anchor="middle" font-size="38" font-weight="bold" fill="white">H</text>
+</svg>
