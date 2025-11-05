@@ -1,8 +1,11 @@
-import "../styles/main.css";
+import "./main.css";
+import BackgroundAnimation from "../../components/BackgroundAnimation"; 
+
 export default function Home() {
     return (
       <main>
-
+        <BackgroundAnimation />
+        
         <div className = "Main-div">
           <img src = "Main-Logo.svg" className = "Main-Logo"></img>
           <h1 className="Main-Title">
@@ -18,4 +21,4 @@ export default function Home() {
         
       </main>
     );
-  }
+}

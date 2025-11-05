@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./pages/Home.jsx"; 
+import Main from "./pages/main/main.jsx"; 
 
 function App() {
   return (
     <div>
-      <Home /> {}
+      <Main />
     </div>
   );
 }

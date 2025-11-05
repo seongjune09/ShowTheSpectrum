@@ -1,0 +1,52 @@
+body {
+    font-family: "Spoqa Han Sans Neo", "Pretendard Variable", "Noto Sans KR", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Main-Logo {
+    width: 16.25rem; 
+    cursor: pointer;
+    margin-right: 10vh; 
+}
+
+.Main-div {
+    display: flex;  
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center; 
+}
+
+.Main-Title span:nth-child(1) { color: #E9A5A5; opacity: 0.6; }
+.Main-Title span:nth-child(2) { color: #E9D4A6; opacity: 0.65; }
+.Main-Title span:nth-child(3) { color: #A5DCC8; opacity: 0.7; }
+.Main-Title span:nth-child(4) { color: #B5D9F4; opacity: 0.75; }
+.Main-Title span:nth-child(5) { color: #F4B5E0; opacity: 1; }
+.Main-Title span:nth-child(6) { color: #C5AAD9; opacity: 1; }
+
+.Main-Title {
+    font-size: 4.375rem; 
+}
+
+.Login-Btn {
+    background-color: transparent;
+    border: 0.125rem solid #ffffff; 
+    cursor: pointer;
+    height: 3.125rem; 
+    font-size: 1.25rem; 
+    border-radius: 0.5rem; 
+    padding: 0 1.5rem; 
+    transition: all 0.3s ease;
+}
+
+.Login-Btn:hover {  
+    box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.1); 
+    transform: translateY(-0.125rem); 
+}
+
+.Login-Btn:active {
+    transform: translateY(-0.375rem); 
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); 
+}
