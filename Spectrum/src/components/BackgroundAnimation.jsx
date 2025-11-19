@@ -51,7 +51,7 @@ const BackgroundAnimation = () => {
     const row = [];
     for (let i = 0; i < 20; i++) {
       const element = backgroundElements[Math.floor(Math.random() * backgroundElements.length)];
-      const shouldAnimate = Math.random() < 0.15; // 15% 확률로 애니메이션
+      const shouldAnimate = Math.random() < 0.30; // 15% 확률로 애니메이션
       row.push(<ElementCard key={`${rowIndex}-${i}`} element={element} shouldAnimate={shouldAnimate} />);
     }
     return row;
@@ -64,7 +64,7 @@ const BackgroundAnimation = () => {
       whiteSpace: 'nowrap',
       top: topPosition 
     }}>
-      <div style={{ display: 'flex', gap: '20px' }} className={animationClass}>
+      <div style={{ display: 'flex', gap: '60px' }} className={animationClass}>
         {children}
         {children}
       </div>
@@ -113,7 +113,7 @@ const BackgroundAnimation = () => {
 
       <div style={{
         position: 'fixed',
-        top: 0,
+        top: 100,
         left: 0,
         width: '100%',
         height: '100%',

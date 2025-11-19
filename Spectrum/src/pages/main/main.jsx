@@ -16,7 +16,12 @@ export default function Home() {
             <span>스펙트럼 </span>
             <span>!</span>
           </h1>
-          <button className = "Login-Btn">BSSM 계정으로 로그인</button>
+          <button className = "Login-Btn">
+          <span>B</span>
+          <span>S</span>
+          <span className="M">M </span>
+          계정으로 로그인
+          </button>
         </div>
         
       </main>
