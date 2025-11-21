@@ -3,10 +3,9 @@ import BackgroundAnimation from "../../components/BackgroundAnimation";
 
 export default function Home() {
     return (
-      <main>
+      <div>
         <BackgroundAnimation />
-        
-        <div className = "Main-div">
+        <main className = "Main-div">
           <img src = "Main-Logo.svg" className = "Main-Logo"></img>
           <h1 className="Main-Title">
             <span>보</span>
@@ -22,8 +21,12 @@ export default function Home() {
           <span className="M">M </span>
           계정으로 로그인
           </button>
-        </div>
-        
-      </main>
+        </main>
+
+      <section>
+        <h1 className = "Introduction">수업시간에 자주 나오는 원소들의 스펙트럼을 한 번에 !</h1>
+      </section>
+
+      </div>
     );
 }

@@ -51,7 +51,7 @@ const BackgroundAnimation = () => {
     const row = [];
     for (let i = 0; i < 20; i++) {
       const element = backgroundElements[Math.floor(Math.random() * backgroundElements.length)];
-      const shouldAnimate = Math.random() < 0.30; // 15% 확률로 애니메이션
+      const shouldAnimate = Math.random() < 0.40; // 15% 확률로 애니메이션
       row.push(<ElementCard key={`${rowIndex}-${i}`} element={element} shouldAnimate={shouldAnimate} />);
     }
     return row;
