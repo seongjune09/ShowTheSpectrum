@@ -1,0 +1,134 @@
+.periodic-table-page {
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 7rem);
+    grid-template-rows: repeat(10, 8rem);
+    gap: 0.25rem;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.element {
+    border: 0.125rem solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.element:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.atomic-number {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.symbol {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.name {
+    font-size: 0.7rem;
+    color: #666;
+}
+
+/* 원소 카테고리별 색상 */
+.nonmetal {
+    background-color: #E8F5E9;
+    border-color: #A5D6A7;
+}
+
+.noble-gas {
+    background-color: #E1F5FE;
+    border-color: #81D4FA;
+}
+
+.alkali-metal {
+    background-color: #FFCDD2;
+    border-color: #EF9A9A;
+}
+
+.alkaline-earth {
+    background-color: #C5CAE9;
+    border-color: #9FA8DA;
+}
+
+.metalloid {
+    background-color: #D1C4E9;
+    border-color: #B39DDB;
+}
+
+.halogen {
+    background-color: #F8BBD0;
+    border-color: #F48FB1;
+}
+
+.post-transition {
+    background-color: #B2DFDB;
+    border-color: #80CBC4;
+}
+
+.transition-metal {
+    background-color: #BBDEFB;
+    border-color: #90CAF9;
+}
+
+.lanthanide {
+    background-color: #B2EBF2;
+    border-color: #80DEEA;
+}
+
+.actinide {
+    background-color: #B2DFDB;
+    border-color: #80CBC4;
+}
+
+@media (max-width: 1600px) {
+    .periodic-table {
+        grid-template-columns: repeat(18, 4rem);
+        grid-template-rows: repeat(10, 5rem);
+    }
+}
+
+@media (max-width: 1200px) {
+    .periodic-table {
+        grid-template-columns: repeat(18, 3rem);
+        grid-template-rows: repeat(10, 4rem);
+        gap: 0.25rem;
+    }
+
+    .symbol {
+        font-size: 1.2rem;
+    }
+
+    .name {
+        font-size: 0.6rem;
+    }
+}
