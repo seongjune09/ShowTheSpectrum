@@ -7,9 +7,10 @@ body {
 /* Main css*/
 
 .Main-Logo {
-    width: 16.25rem; 
+    width: 20.25rem; 
     cursor: pointer;
-    margin-right: 10vh; 
+    margin-right: 8vh; 
+    margin-top : 10rem;
 }
 
 .Main-div {
@@ -29,7 +30,8 @@ body {
 .Main-Title span:nth-child(6) { color: #C5AAD9; opacity: 1; }
 
 .Main-Title {
-    font-size: 4.375rem; 
+    font-size: 5.375rem; 
+
 }
 
 .Login-Btn {
@@ -47,14 +49,16 @@ body {
 }
 
 @keyframes rainbow-border {
-    0% { border-color: #f5313f; }     /* 빨강 */
-    16% { border-color: #f2b24b; }    /* 주황 */
-    32% { border-color: #f5d547; }    /* 노랑 */
-    48% { border-color: #53c3c0; }    /* 초록 */
-    64% { border-color: #0b71cf; }    /* 파랑 */
-    80% { border-color: #9d5fc7; }    /* 보라 */
-    100% { border-color: #f54d7a; }   /* 분홍 */
+    0% { border-color: #FF8B94; }     
+    16% { border-color: #FFBD88; }  
+    32% { border-color: #FFF088; }    
+    48% { border-color: #53c3c0; }    
+    64% { border-color: #B0E8C8; }   
+    80% { border-color: #C589FF; }    
+    100% { border-color: #D9BFA8; }   
+
 }
+
 
 .Login-Btn span:nth-child(1) { 
     color: #f5313f; 
@@ -89,5 +93,61 @@ body {
 /* section css */
 
 .Introduction {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size : 3em;
+    color : #494949;
 }
+
+/* Feature Section */
+
+.feature-section {
+    padding: 6.25rem 1.25rem;  /* 100px 20px */
+    max-width: 75rem;  /* 1200px */
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.feature-item {
+    background-color: #ffffff;
+    border: 0.125rem solid #e0e0e0;  /* 2px */
+    border-radius: 1rem;  /* 16px */
+    padding: 2.5rem;  /* 40px */
+    text-align: center;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);  /* 0 2px 8px */
+    margin-bottom: 2.5rem;  /* 40px */
+}
+
+.feature-item:hover {
+    transform: translateY(-0.5rem);  /* -8px */
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);  /* 0 8px 24px */
+    border-color: #88CCFF;
+}
+
+.feature-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;  /* 16px */
+    color: #333;
+}
+
+.feature-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+@media (max-width: 48rem) {  /* 768px */
+    .feature-container {
+        grid-template-columns: 1fr;
+        gap: 1.875rem;  /* 30px */
+    }
+
+    .feature-section {
+        padding: 3.75rem 1.25rem;  /* 60px 20px */
+    }
+}
+

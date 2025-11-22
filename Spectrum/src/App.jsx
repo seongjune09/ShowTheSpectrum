@@ -1,11 +1,16 @@
 import React from "react";
-import Main from "./pages/main/main.jsx"; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./pages/main/main.jsx";
+import Dashboard from "./pages/dashboard/dashboard.jsx";
 
 function App() {
   return (
-    <div>
-      <Main />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
