@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./PeriodicTable.css";
 
 export default function PeriodicTable() {
+    const [selectedElement, setSelectedElement] = useState(null);
+
     const elements = [
         // Period 1
         { number: 1, symbol: 'H', name: 'Hydrogen', category: 'nonmetal', row: 1, col: 1 },
@@ -121,8 +124,11 @@ export default function PeriodicTable() {
     ];
 
     const handleElementClick = (element) => {
-        console.log('Selected element:', element);
-        // 나중에 스펙트럼 표시 기능 추가
+        setSelectedElement(element);
+    };
+
+    const closeModal = () => {
+        setSelectedElement(null);
     };
 
     return (
@@ -145,6 +151,48 @@ export default function PeriodicTable() {
                     </div>
                 ))}
             </div>
+
+            {selectedElement && (
+                <div className="modal-overlay" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="modal-close" onClick={closeModal}>×</button>
+                        <div className="modal-header">
+                            <div className={`modal-element-box ${selectedElement.category}`}>
+                                <div className="modal-atomic-number">{selectedElement.number}</div>
+                                <div className="modal-symbol">{selectedElement.symbol}</div>
+                                <div className="modal-name">{selectedElement.name}</div>
+                            </div>
+                        </div>
+                        <div className="modal-body">
+                            <h2>원소 정보</h2>
+                            <div className="element-info">
+                                <div className="info-row">
+                                    <span className="info-label">원자 번호:</span>
+                                    <span className="info-value">{selectedElement.number}</span>
+                                </div>
+                                <div className="info-row">
+                                    <span className="info-label">원소 기호:</span>
+                                    <span className="info-value">{selectedElement.symbol}</span>
+                                </div>
+                                <div className="info-row">
+                                    <span className="info-label">원소명:</span>
+                                    <span className="info-value">{selectedElement.name}</span>
+                                </div>
+                                <div className="info-row">
+                                    <span className="info-label">분류:</span>
+                                    <span className="info-value">{selectedElement.category}</span>
+                                </div>
+                            </div>
+                            <div className="spectrum-section">
+                                <h3>스펙트럼 정보</h3>
+                                <div className="spectrum-placeholder">
+                                    스펙트럼 데이터가 여기에 표시됩니다
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
