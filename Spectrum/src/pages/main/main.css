@@ -14,12 +14,15 @@ body {
 }
 
 .Main-div {
-    display: flex;  
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
-    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 50px;
 }
 
 .Main-Title span:nth-child(1) { color: #E9A5A5; opacity: 0.6; }
@@ -92,62 +95,17 @@ body {
 
 /* section css */
 
+.section {
+    background: none;
+    position: relative;
+    z-index: 10;
+}
+
 .Introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 100px 0;
+    font-size: 3em;
+    color: #494949;
     text-align: center;
-    font-size : 3em;
-    color : #494949;
 }
 
-/* Feature Section */
-
-.feature-section {
-    padding: 6.25rem 1.25rem;  
-    max-width: 75rem;  
-    margin: 0 auto;
-    background-color: #ffffff;
-}
-
-.feature-item {
-    background-color: #ffffff;
-    border: 0.125rem solid #e0e0e0; 
-    border-radius: 1rem;  
-    padding: 2.5rem;  
-    text-align: center;
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);  
-    margin-bottom: 2.5rem; 
-}
-
-.feature-item:hover {
-    transform: translateY(-0.5rem);  
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12); 
-    border-color: #88CCFF;
-}
-
-.feature-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;  
-    color: #333;
-}
-
-.feature-description {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #666;
-}
-
-@media (max-width: 48rem) { 
-    .feature-container {
-        grid-template-columns: 1fr;
-        gap: 1.875rem;  
-    }
-
-    .feature-section {
-        padding: 3.75rem 1.25rem;  
-    }
-}
 

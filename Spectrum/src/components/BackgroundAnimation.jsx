@@ -51,7 +51,7 @@ const BackgroundAnimation = () => {
     const getRandomAnimation = () => {
 
       const animations = [
-        { name: 'spin', weight: 2 },    // spin 확률
+        { name: 'spin', weight: 1 },    // spin 확률
         { name: 'flipX', weight: 1 },   // flipX 확률
         { name: 'flipY', weight: 1 },   // flipY 확률
         { name: 'wobble', weight: 1 }   // wobble 확률
@@ -102,7 +102,7 @@ const BackgroundAnimation = () => {
     const row = [];
     for (let i = 0; i < 20; i++) {
       const element = backgroundElements[Math.floor(Math.random() * backgroundElements.length)];
-      const shouldAnimate = Math.random() < 0.30; 
+      const shouldAnimate = Math.random() < 0.20; 
       row.push(<ElementCard key={`${rowIndex}-${i}`} element={element} shouldAnimate={shouldAnimate} />);
     }
     return row;
@@ -164,7 +164,7 @@ const BackgroundAnimation = () => {
 
       <div style={{
         position: 'absolute',
-        top:40,
+        top: 40,
         left: 0,
         width: '100%',
         height: '100%',
