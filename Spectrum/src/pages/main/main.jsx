@@ -72,7 +72,7 @@ export default function Home() {
 
         <div className="feature-container">
           <div className="feature-card">
-            <div className="feature-icon">🔬</div>
+            <img className="Spectrum-icon" src="Main-Logo.svg"></img>
             <h2 className="feature-title">103개 원소 스펙트럼</h2>
             <p className="feature-description">
               주기율표의 모든 원소들의 스펙트럼을 확인하고 학습할 수 있습니다.
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">📊</div>
+            <img className = "Quiz-icon" src="Quiz.svg"></img>
             <h2 className="feature-title">인터랙티브 주기율표</h2>
             <p className="feature-description">
               클릭 한 번으로 원소의 상세 정보와 스펙트럼 데이터를 확인하세요.
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">💡</div>
+            <img className = "Ranking-icon" src = "Ranking.png"></img>
             <h2 className="feature-title">학습 최적화</h2>
             <p className="feature-description">
               수업시간에 자주 다루는 원소들을 중심으로 구성되어
