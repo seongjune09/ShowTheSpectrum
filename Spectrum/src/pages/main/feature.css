@@ -53,7 +53,7 @@
 
 .feature-title {
     font-size: 1.8rem;
-    color: #333;
+    color: #666;
     margin-bottom: 0.5rem;
     font-weight: 700;
     text-align: center;
@@ -74,8 +74,8 @@
     text-align: left;
 }
 
-.Spectrum-icon1 {
-    width : 18em;
+.Table {
+    width : 35em;
 }
 
 .Ranking-icon1 {

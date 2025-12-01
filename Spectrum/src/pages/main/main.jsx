@@ -79,7 +79,7 @@ export default function Home() {
         <div className="intro-container">
           <div className="intro-card">
             <img className="Spectrum-icon" src="Main-Logo.svg"></img>
-            <h2 className="intro-title">103개 원소 스펙트럼</h2>
+            <h2 className="intro-title">118개 원소 스펙트럼</h2>
   
           </div>
 
@@ -102,8 +102,8 @@ export default function Home() {
           <div className="feature-container">
               <div className="feature-card">
                   <div className="card-container">
-                    <img className="Spectrum-icon1" src="Main-Logo.svg" alt="Spectrum Icon"></img>
-                    <h2 className="feature-title">103개 원소 스펙트럼</h2>
+                    <img className="Table" src="Table.png" alt="Spectrum Icon"></img>
+                    <h2 className="feature-title">118개의 모든 원소 스펙트럼</h2>
                   </div>
                   <div className="feature-content">
                     <h3 className="feature-subtitle">만들기 편거로운</h3>

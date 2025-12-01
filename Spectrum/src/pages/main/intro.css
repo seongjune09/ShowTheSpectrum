@@ -12,7 +12,6 @@
     font-size: 3.5rem;
     color: #333;
     margin-bottom: 1.5rem;
-    font-weight: 700;
 }
 
 .info-text {
@@ -21,7 +20,7 @@
     line-height: 1.8;
     margin-bottom: 1rem;
     text-align :  left;
-    padding-left : 4rem;
+    padding-left : 4rem;;
 }
 
 .info-title span:nth-child(1) { color: #E9A5A5; opacity: 0.6; }

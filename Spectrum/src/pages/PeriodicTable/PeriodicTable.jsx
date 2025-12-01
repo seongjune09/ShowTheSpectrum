@@ -72,7 +72,7 @@ export default function PeriodicTable() {
         // Period 6
         { number: 55, symbol: 'Cs', name: 'Cesium', category: 'alkali-metal', row: 6, col: 1 },
         { number: 56, symbol: 'Ba', name: 'Barium', category: 'alkaline-earth', row: 6, col: 2 },
-        { number: 57, symbol: 'La', name: 'Lanthanum', category: 'lanthanide', row: 6, col: 3 },
+        { number: 57, symbol: 'La', name: 'Lanthanum', category: 'lanthanide', row: 9, col: 3 },
         { number: 58, symbol: 'Ce', name: 'Cerium', category: 'lanthanide', row: 9, col: 4 },
         { number: 59, symbol: 'Pr', name: 'Praseodymium', category: 'lanthanide', row: 9, col: 5 },
         { number: 60, symbol: 'Nd', name: 'Neodymium', category: 'lanthanide', row: 9, col: 6 },
@@ -99,14 +99,14 @@ export default function PeriodicTable() {
         { number: 81, symbol: 'Tl', name: 'Thallium', category: 'post-transition', row: 6, col: 13 },
         { number: 82, symbol: 'Pb', name: 'Lead', category: 'post-transition', row: 6, col: 14 },
         { number: 83, symbol: 'Bi', name: 'Bismuth', category: 'post-transition', row: 6, col: 15 },
-        { number: 84, symbol: 'Po', name: 'Polonium', category: 'post-transition', row: 6, col: 16 },
+        { number: 84, symbol: 'Po', name: 'Polonium', category: 'metalloid', row: 6, col: 16 },
         { number: 85, symbol: 'At', name: 'Astatine', category: 'halogen', row: 6, col: 17 },
         { number: 86, symbol: 'Rn', name: 'Radon', category: 'noble-gas', row: 6, col: 18 },
 
         // Period 7
         { number: 87, symbol: 'Fr', name: 'Francium', category: 'alkali-metal', row: 7, col: 1 },
         { number: 88, symbol: 'Ra', name: 'Radium', category: 'alkaline-earth', row: 7, col: 2 },
-        { number: 89, symbol: 'Ac', name: 'Actinium', category: 'actinide', row: 7, col: 3 },
+        { number: 89, symbol: 'Ac', name: 'Actinium', category: 'actinide', row: 10, col: 3 },
         { number: 90, symbol: 'Th', name: 'Thorium', category: 'actinide', row: 10, col: 4 },
         { number: 91, symbol: 'Pa', name: 'Protactinium', category: 'actinide', row: 10, col: 5 },
         { number: 92, symbol: 'U', name: 'Uranium', category: 'actinide', row: 10, col: 6 },
@@ -121,6 +121,21 @@ export default function PeriodicTable() {
         { number: 101, symbol: 'Md', name: 'Mendelevium', category: 'actinide', row: 10, col: 15 },
         { number: 102, symbol: 'No', name: 'Nobelium', category: 'actinide', row: 10, col: 16 },
         { number: 103, symbol: 'Lr', name: 'Lawrencium', category: 'actinide', row: 10, col: 17 },
+        { number: 104, symbol: 'Rf', name: 'Rutherfordium', category: 'transition-metal', row: 7, col: 4 },
+        { number: 105, symbol: 'Db', name: 'Dubnium', category: 'transition-metal', row: 7, col: 5 },
+        { number: 106, symbol: 'Sg', name: 'Seaborgium', category: 'transition-metal', row: 7, col: 6 },
+        { number: 107, symbol: 'Bh', name: 'Bohrium', category: 'transition-metal', row: 7, col: 7 },
+        { number: 108, symbol: 'Hs', name: 'Hassium', category: 'transition-metal', row: 7, col: 8 },
+        { number: 109, symbol: 'Mt', name: 'Meitnerium', category: 'transition-metal', row: 7, col: 9 },
+        { number: 110, symbol: 'Ds', name: 'Darmstadtium', category: 'transition-metal', row: 7, col: 10 },
+        { number: 111, symbol: 'Rg', name: 'Roentgenium', category: 'transition-metal', row: 7, col: 11 },
+        { number: 112, symbol: 'Cn', name: 'Copernicium', category: 'transition-metal', row: 7, col: 12 },
+        { number: 113, symbol: 'Nh', name: 'Nihonium', category: 'post-transition', row: 7, col: 13 },
+        { number: 114, symbol: 'Fl', name: 'Flerovium', category: 'post-transition', row: 7, col: 14 },
+        { number: 115, symbol: 'Mc', name: 'Moscovium', category: 'post-transition', row: 7, col: 15 },
+        { number: 116, symbol: 'Lv', name: 'Livermorium', category: 'post-transition', row: 7, col: 16 },
+        { number: 117, symbol: 'Ts', name: 'Tennessine', category: 'halogen', row: 7, col: 17 },
+        { number: 118, symbol: 'Og', name: 'Oganesson', category: 'noble-gas', row: 7, col: 18 },
     ];
 
     const handleElementClick = (element) => {

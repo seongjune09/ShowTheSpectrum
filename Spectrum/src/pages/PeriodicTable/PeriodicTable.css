@@ -1,3 +1,5 @@
+
+
 .periodic-table-page {
     padding: 3rem 2rem;
     min-height: 100vh;
@@ -19,7 +21,7 @@
     max-width: 130rem;
     margin: 0 auto;
     padding: 2rem;
-    background-color: white;
+    background-color: #F1F2F4;
     border-radius: 1rem;
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +57,7 @@
 }
 
 .name {
-    font-size: 0.7rem;
+    font-size: 0.55rem;
     color: #666;
 }
 
@@ -81,17 +83,17 @@
 }
 
 .metalloid {
-    background-color: #c0e4ff;
+    background-color: #e2eebf;
     border-color: #e9e9e9;
 }
 
 .halogen {
-    background-color: #F8BBD0;
+    background-color: #feffc3;
     border-color: #e9e9e9;
 }
 
 .post-transition {
-    background-color: #B2DFDB;
+    background-color: #b9ffba;
     border-color: #e9e9e9;
 }
 
@@ -101,12 +103,12 @@
 }
 
 .lanthanide {
-    background-color: #B2EBF2;
+    background-color: #b8ffff;
     border-color: #e9e9e9;
 }
 
 .actinide {
-    background-color: #B2DFDB;
+    background-color: #c6ffeb;
     border-color: #e9e9e9;
 }
 
@@ -140,7 +142,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(230, 230, 230, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
