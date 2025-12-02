@@ -3,6 +3,7 @@ import "./section.css";
 import "./intro.css";
 import "./feature.css";
 import "./end.css";
+import "./footer.css";
 import { useNavigate } from "react-router-dom";
 import BackgroundAnimation from "../../components/BackgroundAnimation";
 import { handleLogin } from "../../api/LoginApi/Login";
@@ -156,6 +157,8 @@ export default function Home() {
             BSM 계정으로 로그인하고 원소의 세계를 탐험해보세요
           </p>
         </div>
+
+
       
 
         <div className="Introduction1">
@@ -168,6 +171,16 @@ export default function Home() {
 
 
         </section>
+
+        <footer className="footer">
+          <div className ="title-container">
+            <p className = "title">(주)소마</p>
+            <p>대표 : 박성준 ㅣ 사업자등록번호 : 1004-12-12345 ㅣ 이메일 : 25_27@bssm.hs.kr</p>
+            <p>주소 : 부산광역시 강서구 가락대로 1393 ㅣ 우편번호 : 46708 ㅣ 고객센터 : 010 - 0000 - 0000</p> 
+            <a href ="https://studio.youtube.com/channel/UCYoJiW-eDl2jmbxhiKeInPg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" ><img className = "ytube-icon" src="ytube.svg" /></a>
+            <a href = "https://github.com/seongjune09/show-the-Spectrum-" ><img className = "github-icon" src = "github.svg"/></a>
+          </div>
+        </footer>
 
       </>
     );

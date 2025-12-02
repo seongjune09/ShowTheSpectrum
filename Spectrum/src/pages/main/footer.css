@@ -1,0 +1,25 @@
+.footer {
+    padding-right : 40rem;
+    background-color: #5A657726;
+    padding: 3rem 1rem;
+    color: #70798F;
+}
+
+.title {
+    color : #707070;
+    font-weight : bold;
+}
+
+.title-container {
+    padding : 0 0 5rem 15rem;
+}
+
+.ytube-icon {
+    width : 2rem;
+    padding-right : 1rem;
+}
+
+.github-icon {
+    width : 1.7rem;
+    margin-bottom : 0.1rem;
+}
