@@ -104,14 +104,13 @@ export default function Home() {
               <div className="feature-card">
                   <div className="card-container">
                     <img className="Table" src="Table.png" alt="Spectrum Icon"></img>
-                    <h2 className="feature-title">118개의 모든 원소 스펙트럼</h2>
+                    <h2 className="feature-title">카드형태의 편리한 이해</h2>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-subtitle">만들기 편거로운</h3>
-                    <h2 className="feature-title">1,000만 개 이상의 요소</h2>
+                    <h2 className="feature-title">118개 원소, 자세한 정보!</h2>
                     <p className="feature-description">
-                      디지인에 필요한 사진, 아이콘, 영상, 오디오 등 모든 요소가 있어요.<br/>
-                      직접 만들 필요 없이, 원하는 요소를 고르기만 하면 전문가 수준의 결과물을 만들 수 있어요.
+                      주기율표에서 알고싶은 원소를 클릭하여 해당 원소의 자세한 정보를 <br/>한 눈에 확인할 수 있습니다.<br/>
+                      흡수 스펙트럼과, 방출 스펙트럼 둘 다 확인할 수 있으며 복잡한 정보를 카드 형태로 정리하여 쉽게 이해할 수 있습니다.
                     </p>
                   </div>
               </div>
@@ -119,14 +118,13 @@ export default function Home() {
               <div className="feature-card">
                   <div className="card-container">
                     <img className="Quiz-icon1" src="Quiz.svg" alt="Quiz Icon"></img>
-                    <h2 className="feature-title">인터랙티브 주기율표</h2>
+                    <h2 className="feature-title">재미있게 복습하는 퀴즈</h2>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-subtitle">시선을 사로잡는</h3>
-                    <h2 className="feature-title">애니메이션 효과</h2>
-                    <p className="feature-description">
-                      복잡한 작업 없이 애니메이션 효과를 손쉽게 적용할 수 있어요.<br/>
-                      클릭 한 번만으로 텍스트와 요소에 생동감을 더해보세요.
+                    <h2 className="feature-title"></h2>
+                    <p className="feature-description"> 다양한 원소들의 스펙트럼 퀴즈를 풀어보며 재미있게 복습할 수 있고<br/>
+                    
+                    
                     </p>
                   </div>
               </div>
@@ -134,14 +132,14 @@ export default function Home() {
               <div className="feature-card">
                   <div className="card-container">
                     <img className="Ranking-icon1" src="Ranking.png" alt="Ranking Icon"></img>
-                    <h2 className="feature-title">학습 최적화</h2>
+                    <h2 className="feature-title">수소 매달의 주인공은 누구?</h2>
                   </div>
                   <div className="feature-content">
-                    <h3 className="feature-subtitle">시선을 사로잡는</h3>
-                    <h2 className="feature-title">애니메이션 효과</h2>
+                    <h2 className="feature-title">누가 1등? 친구들과 랭킹 대결!</h2>
                     <p className="feature-description">
-                      복잡한 작업 없이 애니메이션 효과를 손쉽게 적용할 수 있어요.<br/>
-                      클릭 한 번만으로 텍스트와 요소에 생동감을 더해보세요.
+                    스펙트럼 퀴즈를 풀고 친구들과 경쟁하여 수소 매달의 주인공이 되어보세요 !<br/>
+                    수소매달의 주인에게는 소소한 상품이 있을지도.. <br/> - 자세한건 고객센터에 메세지로 문의남겨주세요! -
+                      
                     </p>
                   </div>
               </div>
@@ -180,7 +178,7 @@ export default function Home() {
           <div className ="title-container">
             <p className = "title">(주)소마</p>
             <p>대표 : 박성준 ㅣ 사업자등록번호 : 1004-12-12345 ㅣ 이메일 : 25_27@bssm.hs.kr</p>
-            <p>주소 : 부산광역시 강서구 가락대로 1393 ㅣ 우편번호 : 46708 ㅣ 고객센터 : 010 - 0000 - 0000</p> 
+            <p>주소 : 부산광역시 강서구 가락대로 1393 ㅣ 우편번호 : 46708 ㅣ 고객센터 : 010-  </p> 
             <a href ="https://studio.youtube.com/channel/UCYoJiW-eDl2jmbxhiKeInPg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" ><img className = "ytube-icon" src="ytube.svg" /></a>
             <a href = "https://github.com/seongjune09/show-the-Spectrum-" ><img className = "github-icon" src = "github.svg"/></a>
           </div>

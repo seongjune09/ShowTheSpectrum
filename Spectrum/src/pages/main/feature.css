@@ -22,11 +22,6 @@
     flex-direction: row-reverse;
 }
 
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
 .card-container {
     flex: 1;
     display: flex;
@@ -79,9 +74,11 @@
 }
 
 .Ranking-icon1 {
-    width : 12em;
+    width : 20rem;
+    padding-bottom : 1rem;
 }
 
 .Quiz-icon1 {
-    width : 10em;
+    width : 12em;
+    padding-bottom : 1rem; 
 }
