@@ -3,6 +3,7 @@ import "./PeriodicTable.css";
 
 export default function PeriodicTable() {
     const [selectedElement, setSelectedElement] = useState(null);
+    const [isNoteModalOpen, setIsNoteModalOpen] = useState(false);
 
     const elements = [
         // Period 1
@@ -146,6 +147,14 @@ export default function PeriodicTable() {
         setSelectedElement(null);
     };
 
+    const openNoteModal = () => {
+        setIsNoteModalOpen(true);
+    };
+
+    const closeNoteModal = () => {
+        setIsNoteModalOpen(false);
+    };
+
     return (
         <div className="periodic-table-page">
             <h1 className="page-title">
@@ -166,7 +175,7 @@ export default function PeriodicTable() {
                 </div>
             </div>
 
-            <img  className ="ExclamationMark" src="ExclamationMark.png"></img>
+            <img  className ="ExclamationMark" src="ExclamationMark.png" onClick={openNoteModal}></img>
 
 
             <div className="periodic-table">
@@ -232,6 +241,21 @@ export default function PeriodicTable() {
                                     </div>
                                 )}
                             </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {isNoteModalOpen && (
+                <div className="modal-overlay" onClick={closeNoteModal}>
+                    <div className="precautions-container" onClick={(e) => e.stopPropagation()}>
+                        <button className="modal-close" onClick={closeNoteModal}>×</button>
+                        <div className="precautions">
+                            <p>참고사항 :<br/>
+                                각 원소의 스펙트럼은 WebElements 사이트를 참고하여 <br/>
+                                직접 제작한 시각화 자료입니다. <br/>
+                                교육 목적으로 제작되었으며, 선의 위치와 개수가 <br/>실제와 다를 수 있음을 양해 부탁드립니다.
+                            </p>
                         </div>
                     </div>
                 </div>

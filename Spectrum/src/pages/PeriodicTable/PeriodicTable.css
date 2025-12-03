@@ -74,7 +74,16 @@
 }
 
 .ExclamationMark {
-    width : 2rem;
+    position: absolute;
+    top: 17rem;
+    right: 3rem;
+    width: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.ExclamationMark:hover {
+    transform: scale(1.1);
 }
 
 .page-title {
@@ -384,4 +393,29 @@
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* 주의사항 스타일 */
+.precautions-container {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    max-width: 40rem;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+.precautions {
+    padding: 2rem 2.5rem;
+    text-align: center;
+}
+
+.precautions p {
+    text-align: left;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    word-break: keep-all;
 }

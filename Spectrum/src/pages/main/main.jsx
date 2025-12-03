@@ -109,7 +109,7 @@ export default function Home() {
                   <div className="feature-content">
                     <h2 className="feature-title">118개 원소, 자세한 정보!</h2>
                     <p className="feature-description">
-                      주기율표에서 알고싶은 원소를 클릭하여 해당 원소의 자세한 정보를 <br/>한 눈에 확인할 수 있습니다.<br/>
+                      주기율표에서 알고싶은 원소를 클릭하여 해당 원소의 정보를 <br/>한 눈에 확인할 수 있습니다.<br/>
                       흡수 스펙트럼과, 방출 스펙트럼 둘 다 확인할 수 있으며 복잡한 정보를 카드 형태로 정리하여 쉽게 이해할 수 있습니다.
                     </p>
                   </div>
