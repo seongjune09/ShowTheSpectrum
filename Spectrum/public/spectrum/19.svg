@@ -70,7 +70,7 @@
   
   <rect width="450" height="165" fill="#F8F8F8"/>
   
-  <text x="30" y="30" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="40" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     칼륨 흡수 스펙트럼
   </text>
   
@@ -78,7 +78,7 @@
   <rect x="30" y="45" width="390" height="40" fill="url(#edgeDarkening)"/>
   <rect x="30" y="45" width="390" height="40" fill="none" stroke="#CCC" stroke-width="1.5"/>
   
-  <text x="30" y="105" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="115" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     칼륨 방출 스펙트럼
   </text>
   

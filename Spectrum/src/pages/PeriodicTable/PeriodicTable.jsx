@@ -21,17 +21,17 @@ export default function PeriodicTable() {
 
         // Period 3
         { number: 11, symbol: 'Na', name: 'Sodium', category: 'alkali-metal', row: 3, col: 1, spectrum: 'spectrum/11.svg' },
-        { number: 12, symbol: 'Mg', name: 'Magnesium', category: 'alkaline-earth', row: 3, col: 2, spectrum: '' },
-        { number: 13, symbol: 'Al', name: 'Aluminum', category: 'post-transition', row: 3, col: 13, spectrum: '' },
-        { number: 14, symbol: 'Si', name: 'Silicon', category: 'metalloid', row: 3, col: 14, spectrum: '' },
-        { number: 15, symbol: 'P', name: 'Phosphorus', category: 'nonmetal', row: 3, col: 15, spectrum: '' },
-        { number: 16, symbol: 'S', name: 'Sulfur', category: 'nonmetal', row: 3, col: 16, spectrum: '' },
-        { number: 17, symbol: 'Cl', name: 'Chlorine', category: 'halogen', row: 3, col: 17, spectrum: '' },
-        { number: 18, symbol: 'Ar', name: 'Argon', category: 'noble-gas', row: 3, col: 18, spectrum: '' },
+        { number: 12, symbol: 'Mg', name: 'Magnesium', category: 'alkaline-earth', row: 3, col: 2, spectrum: 'spectrum/12.svg' },
+        { number: 13, symbol: 'Al', name: 'Aluminum', category: 'post-transition', row: 3, col: 13, spectrum: 'spectrum/13.svg' },
+        { number: 14, symbol: 'Si', name: 'Silicon', category: 'metalloid', row: 3, col: 14, spectrum: 'spectrum/14.svg' },
+        { number: 15, symbol: 'P', name: 'Phosphorus', category: 'nonmetal', row: 3, col: 15, spectrum: 'spectrum/15.svg' },
+        { number: 16, symbol: 'S', name: 'Sulfur', category: 'nonmetal', row: 3, col: 16, spectrum: 'spectrum/16.svg' },
+        { number: 17, symbol: 'Cl', name: 'Chlorine', category: 'halogen', row: 3, col: 17, spectrum: 'spectrum/17.svg' },
+        { number: 18, symbol: 'Ar', name: 'Argon', category: 'noble-gas', row: 3, col: 18, spectrum: 'spectrum/18.svg' },
 
         // Period 4
-        { number: 19, symbol: 'K', name: 'Potassium', category: 'alkali-metal', row: 4, col: 1, spectrum: '' },
-        { number: 20, symbol: 'Ca', name: 'Calcium', category: 'alkaline-earth', row: 4, col: 2, spectrum: '' },
+        { number: 19, symbol: 'K', name: 'Potassium', category: 'alkali-metal', row: 4, col: 1, spectrum: 'spectrum/19.svg' },
+        { number: 20, symbol: 'Ca', name: 'Calcium', category: 'alkaline-earth', row: 4, col: 2, spectrum: 'spectrum/20.svg' },
         { number: 21, symbol: 'Sc', name: 'Scandium', category: 'transition-metal', row: 4, col: 3, spectrum: '' },
         { number: 22, symbol: 'Ti', name: 'Titanium', category: 'transition-metal', row: 4, col: 4, spectrum: '' },
         { number: 23, symbol: 'V', name: 'Vanadium', category: 'transition-metal', row: 4, col: 5, spectrum: '' },
