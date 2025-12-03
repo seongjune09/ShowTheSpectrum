@@ -148,7 +148,25 @@ export default function PeriodicTable() {
 
     return (
         <div className="periodic-table-page">
-            <h1 className="page-title">주기율표</h1>
+            <h1 className="page-title">
+                <span>주</span>
+                <span>기</span>
+                <span>율</span>
+                <span>표</span>
+            </h1>
+
+            <div className = "icon-container">
+                <div className="icon-wrapper">
+                    <img className="quiz-icon" src="Quiz.svg" />
+                    <span className="tooltip">퀴즈 풀러가기</span>
+                </div>
+                <div className="icon-wrapper">
+                    <img className="ranking-icon" src="Ranking.png" />
+                    <span className="tooltip">랭킹 확인하기</span>
+                </div>
+            </div>
+
+
             <div className="periodic-table">
                 {elements.map(element => (
                     <div

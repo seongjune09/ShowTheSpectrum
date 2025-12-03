@@ -3,15 +3,89 @@
 .periodic-table-page {
     padding: 3rem 2rem;
     min-height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
+}
+
+.icon-container {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    z-index: 100;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-container img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.quiz-icon {
+    width : 6rem;
+    height: 4rem;
+}
+
+.ranking-icon {
+    width : 7rem;
+    height: 4.5rem;
+}
+
+
+
+.icon-container img:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 101;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: -0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #333;
+}
+
+.icon-wrapper:hover .tooltip {
+    opacity: 1;
 }
 
 .page-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
-    color: #333;
+    margin-top: 10rem;
 }
+
+.page-title span:nth-child(1) { color: #E9A5A5; opacity: 0.6; }
+.page-title span:nth-child(2) { color: #E9D4A6; opacity: 0.65; }
+.page-title span:nth-child(3) { color: #A5DCC8; opacity: 0.7; }
+.page-title span:nth-child(4) { color: #B5D9F4; opacity: 0.75; }
+
 
 .periodic-table {
     display: grid;
@@ -21,7 +95,7 @@
     max-width: 130rem;
     margin: 0 auto;
     padding: 2rem 2rem 2rem 6rem;
-    background-color: #F1F2F4;
+    background-color: #f6f6f600;
     border-radius: 1rem;
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
