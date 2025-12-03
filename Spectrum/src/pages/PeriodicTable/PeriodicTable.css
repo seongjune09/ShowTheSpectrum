@@ -73,6 +73,10 @@
     opacity: 1;
 }
 
+.ExclamationMark {
+    width : 2rem;
+}
+
 .page-title {
     text-align: center;
     font-size: 4rem;

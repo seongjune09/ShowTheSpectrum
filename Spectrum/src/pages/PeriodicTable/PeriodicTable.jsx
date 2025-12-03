@@ -166,6 +166,8 @@ export default function PeriodicTable() {
                 </div>
             </div>
 
+            <img  className ="ExclamationMark" src="ExclamationMark.png"></img>
+
 
             <div className="periodic-table">
                 {elements.map(element => (
