@@ -143,7 +143,7 @@ export default function Quiz() {
       <div className="quiz-container">
         <div className="difficulty-selection">
           <h1 className="quiz-title">스펙트럼 퀴즈</h1>
-          <p className="quiz-subtitle">난이도를 선택하세요</p>
+          <h1 className="quiz-title"><br></br></h1>
           <div className="difficulty-buttons">
           <button
               className="difficulty-btn hard"
@@ -192,14 +192,14 @@ export default function Quiz() {
           </div>
           <p className="result-percentage">{percentage.toFixed(0)}% 정답</p>
           <p className="result-message">
-            {percentage === 100 ? "완벽해요! 🎉" :
-             percentage >= 80 ? "훌륭해요! 👏" :
-             percentage >= 60 ? "잘했어요! 😊" :
-             "다시 도전해보세요! 💪"}
+            {percentage === 100 ? "스펙트럼의 개념을 마스터하셨습니다!" :
+             percentage >= 80 ? "정말 잘하셨습니다!" :
+             percentage >= 60 ? "문제를 조금 더 꼼꼼히!" :
+             "아쉽습니당 ㅠ.ㅠ"}
           </p>
           <div className="result-buttons">
-            <button className="retry-btn" onClick={() => selectDifficulty(difficulty)}>
-              같은 난이도 다시하기
+            <button className="ranking-btn" onClick={() => selectDifficulty(difficulty)}>
+              랭킹 확인하러가기
             </button>
             <button className="home-btn" onClick={restart}>
               난이도 선택으로
@@ -213,61 +213,71 @@ export default function Quiz() {
   // 퀴즈 진행 화면
   const currentQ = quizData[difficulty][currentQuestion];
 
+  // Kahoot 스타일 아이콘 및 색상
+  const kahootColors = ['red', 'blue', 'yellow', 'green'];
+  const kahootShapes = ['▲', '◆', '●', '■'];
+
   return (
-    <div className="quiz-container">
-      <div className={`quiz-content difficulty-${difficulty}`}>
-        <div className="quiz-header">
+    <div className="quiz-container kahoot-style">
+      <div className="kahoot-header">
+        <div className="quiz-info-bar">
+          <span className="question-number">{currentQuestion + 1} / {quizData[difficulty].length}</span>
           <span className="difficulty-badge">난이도: {difficulty}</span>
+          <span className="current-score">점수: {score}</span>
         </div>
+      </div>
 
-        <h2 className="question-text">{currentQ.question}</h2>
+      <div className="kahoot-question-section">
+        <h2 className="kahoot-question">{currentQ.question}</h2>
+      </div>
 
-        <div className="options-container">
-          {currentQ.options.map((option, index) => (
-            <button
-              key={index}
-              className={`option-btn ${
-                selectedAnswer === index
-                  ? index === currentQ.answer
-                    ? 'correct'
-                    : 'incorrect'
-                  : showResult && index === currentQ.answer
-                    ? 'correct'
-                    : ''
-              }`}
-              onClick={() => selectAnswer(index)}
-              disabled={selectedAnswer !== null}
-            >
-              <span className="option-number">{index + 1}</span>
-              <span className="option-text">{option}</span>
-              {showResult && index === currentQ.answer && (
-                <span className="check-icon">✓</span>
-              )}
-              {selectedAnswer === index && index !== currentQ.answer && (
-                <span className="cross-icon">✗</span>
-              )}
-            </button>
-          ))}
-        </div>
+      <div className="kahoot-answers-grid">
+        {currentQ.options.map((option, index) => (
+          <button
+            key={index}
+            className={`kahoot-answer-btn ${kahootColors[index]} ${
+              selectedAnswer === index
+                ? index === currentQ.answer
+                  ? 'correct-answer'
+                  : 'wrong-answer'
+                : showResult && index === currentQ.answer
+                  ? 'correct-answer'
+                  : ''
+            }`}
+            onClick={() => selectAnswer(index)}
+            disabled={selectedAnswer !== null}
+          >
+            <div className="answer-shape">{kahootShapes[index]}</div>
+            <div className="answer-text">{option}</div>
+            {showResult && index === currentQ.answer && (
+              <div className="answer-result-icon">✓</div>
+            )}
+            {selectedAnswer === index && index !== currentQ.answer && (
+              <div className="answer-result-icon">✗</div>
+            )}
+          </button>
+        ))}
+      </div>
 
-        {showResult && (
-          <div className="result-feedback">
-            <p className={selectedAnswer === currentQ.answer ? 'correct-feedback' : 'incorrect-feedback'}>
-              {selectedAnswer === currentQ.answer ? '정답입니다! 🎉' : '틀렸습니다. 😢'}
+      {showResult && (
+        <div className="kahoot-result-overlay">
+          <div className={`kahoot-result-popup ${selectedAnswer === currentQ.answer ? 'correct' : 'incorrect'}`}>
+            <div className="result-icon">
+              {selectedAnswer === currentQ.answer ? '✓' : '✗'}
+            </div>
+            <p className="result-message">
+              {selectedAnswer === currentQ.answer ? '정답입니다!' : '틀렸습니다!'}
             </p>
-            <button className="next-btn" onClick={nextQuestion}>
+            <button className="kahoot-next-btn" onClick={nextQuestion}>
               {currentQuestion < quizData[difficulty].length - 1 ? '다음 문제' : '결과 보기'}
             </button>
           </div>
-        )}
-
-        <div className="quiz-footer">
-          <button className="quit-btn" onClick={restart}>
-            그만하기
-          </button>
-          <span className="current-score">현재 점수: {score}</span>
         </div>
-      </div>
+      )}
+
+      <button className="kahoot-quit-btn" onClick={restart}>
+        나가기
+      </button>
     </div>
   );
 }

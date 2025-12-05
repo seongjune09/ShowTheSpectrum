@@ -13,7 +13,7 @@ export default function PeriodicTable() {
     }
 
     const handleRankingClick = () => {
-        navigate('ranking')
+        navigate('/ranking')
     }
 
     const elements = [
@@ -202,7 +202,6 @@ export default function PeriodicTable() {
                     >
                         <div className="atomic-number">{element.number}</div>
                         <div className="symbol">{element.symbol}</div>
-                        <div className="name">{element.name}</div>
                     </div>
                 ))}
             </div>
