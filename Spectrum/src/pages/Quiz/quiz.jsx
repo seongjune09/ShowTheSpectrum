@@ -59,29 +59,30 @@ const quizData = {
   ],
   하: [
     {
-      question: "방출 스펙트럼은 무엇을 보여주나?",
-      options: ["원소가 방출하는 빛", "원소가 흡수하는 빛", "원소의 질량", "원소의 온도"],
+      question: "1. 스펙트럼이란 무엇을 의미하는가?",
+      options: ["빛의 속도를 나타낸 표", "온도를 측정하는 장치", "전류의 흐름을 측정한 그래프", " 빛이 파장에 따라 나뉜 모습"],
+      answer: 3
+    },
+    {
+      question: "2. 빛을 프리즘에 통과시키면 나타나는 연속적인 무지개색 줄무늬를 무엇이라고 하는가?",
+      options: ["연속 스펙트럼", "선 스펙트럼", "흡수스펙트럼", "음영스펙트럼"],
       answer: 0
     },
     {
-      question: "각 원소의 스펙트럼이 다른 이유는?",
-      options: ["전자 배치가 다르기 때문", "원자 크기가 다르기 때문", "질량이 다르기 때문", "밀도가 다르기 때문"],
-      answer: 0
+      question: "3. 원소마다 고유하게 나타나는 빛의 색(파장) 줄무늬는?",
+      options: ["백색광", "연속 스펙트럼", "선 스펙트럼", "광자 스펙트럼"],
+      answer: 2
     },
     {
-      question: "스펙트럼은 주로 어떤 실험에 사용되나?",
-      options: ["원소 확인", "온도 측정", "압력 측정", "부피 측정"],
-      answer: 0
+      question: "4. 흡수 스펙트럼에서 어둡게 나타나는 부분은 무엇을 의미하는가?",
+      options: ["빛의 강도가 강해진 부분", "특정 파장의 빛이 흡수된 부분", "전자가 방출된 부분", "온도가 감소한 부분"],
+      answer: 1
     },
     {
-      question: "흡수 스펙트럼에서 검은 선은 무엇을 의미하나?",
-      options: ["흡수된 파장", "방출된 파장", "반사된 파장", "투과된 파장"],
-      answer: 0
-    },
-    {
-      question: "불꽃 반응 실험의 목적은?",
-      options: ["원소를 색으로 구분", "원소의 질량 측정", "원소의 온도 측정", "원소의 크기 측정"],
-      answer: 0
+      question: "5. 다음 중 스펙트럼 분석과의 직접적인 연관성이 가장 낮다고 볼 수도 있는 것은?",
+      options: ["별에서 방출되는 빛을 이용해 별의 표면 온도와 원소 조성을 추정하는 과정", "다양한 물질이 특정 파장의 빛을 흡수하는 특성을 이용해 혼합물의 성분을 분석하는 과정",
+        "특정 파장의 전자기파가 물질에 전달하는 에너지 차이를 관찰해 열을 발생시키는 현상 연구", "LED나 레이저와 같은 빛 관련 장치의 출력 파장을 확인하여 품질을 평가하는 과정"],
+      answer: 2
     }
   ]
 };
@@ -149,16 +150,16 @@ export default function Quiz() {
               className="difficulty-btn hard"
               onClick={() => selectDifficulty('상')}
             >
-              <img className="First-img" src = "First.png" />
+              <img src="First.png" alt="상" />
               <div className="btn-text">상</div>
               <div className="btn-desc">심화 학습</div>
             </button>
-            
+
             <button
               className="difficulty-btn medium"
               onClick={() => selectDifficulty('중')}
             >
-              <img className="Second-img" src = "Second.png" />
+              <img src="Second.png" alt="중" />
               <div className="btn-text">중</div>
               <div className="btn-desc">원소별 특징</div>
             </button>
@@ -166,7 +167,7 @@ export default function Quiz() {
               className="difficulty-btn easy"
               onClick={() => selectDifficulty('하')}
             >
-              <img className="Third-img" src = "Third.png" />
+              <img src="Third.png" alt="하" />
               <div className="btn-text">하</div>
               <div className="btn-desc">기초 개념</div>
             </button>
@@ -185,12 +186,12 @@ export default function Quiz() {
         <div className="result-screen">
           <h1 className="result-title">퀴즈 완료!</h1>
           <div className="result-score">
-            <div className="score-circle">
+            <div className={`score-circle ${difficulty}`}>
               <span className="score-number">{score}</span>
               <span className="score-total">/ {quizData[difficulty].length}</span>
             </div>
           </div>
-          <p className="result-percentage">{percentage.toFixed(0)}% 정답</p>
+          <p className={`result-percentage ${difficulty}`}>{percentage.toFixed(0)}% 정답</p>
           <p className="result-message">
             {percentage === 100 ? "스펙트럼의 개념을 마스터하셨습니다!" :
              percentage >= 80 ? "정말 잘하셨습니다!" :
@@ -198,10 +199,10 @@ export default function Quiz() {
              "아쉽습니당 ㅠ.ㅠ"}
           </p>
           <div className="result-buttons">
-            <button className="ranking-btn" onClick={() => selectDifficulty(difficulty)}>
+            <button className={`ranking-btn ${difficulty}`} onClick={() => selectDifficulty(difficulty)}>
               랭킹 확인하러가기
             </button>
-            <button className="home-btn" onClick={restart}>
+            <button className={`home-btn ${difficulty}`} onClick={restart}>
               난이도 선택으로
             </button>
           </div>
@@ -215,7 +216,7 @@ export default function Quiz() {
 
   // Kahoot 스타일 아이콘 및 색상
   const kahootColors = ['red', 'blue', 'yellow', 'green'];
-  const kahootShapes = ['▲', '◆', '●', '■'];
+  const kahootShapes = ['♂', '♄', '☉', '☾'];
 
   return (
     <div className="quiz-container kahoot-style">
@@ -223,7 +224,6 @@ export default function Quiz() {
         <div className="quiz-info-bar">
           <span className="question-number">{currentQuestion + 1} / {quizData[difficulty].length}</span>
           <span className="difficulty-badge">난이도: {difficulty}</span>
-          <span className="current-score">점수: {score}</span>
         </div>
       </div>
 

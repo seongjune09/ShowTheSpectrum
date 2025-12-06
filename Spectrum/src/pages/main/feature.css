@@ -69,7 +69,11 @@
     text-align: left;
 }
 
-.Table {
+.intro-table {
+    width : 35em;
+}
+
+.intro-quiz {
     width : 35em;
 }
 

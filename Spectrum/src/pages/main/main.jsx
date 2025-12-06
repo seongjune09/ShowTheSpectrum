@@ -103,7 +103,7 @@ export default function Home() {
           <div className="feature-container">
               <div className="feature-card">
                   <div className="card-container">
-                    <img className="Table" src="Table.png" alt="Spectrum Icon"></img>
+                    <img className="intro-table" src="intro-table.png"></img>
                     <h2 className="feature-title">카드형태의 편리한 이해</h2>
                   </div>
                   <div className="feature-content">
@@ -117,12 +117,13 @@ export default function Home() {
 
               <div className="feature-card">
                   <div className="card-container">
-                    <img className="Quiz-icon1" src="Quiz.svg" alt="Quiz Icon"></img>
+                    <img className="intro-quiz" src="intro-quiz.png"></img>
                     <h2 className="feature-title">재미있게 복습하는 퀴즈</h2>
                   </div>
                   <div className="feature-content">
-                    <h2 className="feature-title"></h2>
+                    <h2 className="feature-title">난이도 선택으로 나에게 맞는 문제를!</h2>
                     <p className="feature-description"> 다양한 원소들의 스펙트럼 퀴즈를 풀어보며 재미있게 복습할 수 있고<br/>
+                    문제들이 상-중-하로 있어 나에게 맞는 문제를 골라 복습할 수도 있습니다.
                     
                     
                     </p>
