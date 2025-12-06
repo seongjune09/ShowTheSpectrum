@@ -58,24 +58,3 @@
 .Login-Btn1:active {
     transform: translateY(-0.375rem); 
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .Introduction {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .feature-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .info-title, .end-title {
-        font-size: 2rem;
-    }
-
-    .info-text, .end-description {
-        font-size: 1rem;
-    }
-}

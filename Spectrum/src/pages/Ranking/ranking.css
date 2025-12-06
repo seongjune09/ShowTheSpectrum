@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  color: #333;
 }
 
 .ranking-title {
@@ -31,34 +31,12 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  animation: slideUp 0.6s ease-out;
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* 왕관 */
 .crown {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
 }
 
 /* 순위 배지 */
@@ -76,17 +54,17 @@
 }
 
 .rank-badge.gold {
-  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  background: linear-gradient(135deg, #FFE8A3 0%, #FFB6D9 100%);
   color: #8b6914;
 }
 
 .rank-badge.silver {
-  background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+  background: linear-gradient(135deg, #B8F3D8 0%, #A8D8EA 100%);
   color: #4a4a4a;
 }
 
 .rank-badge.bronze {
-  background: linear-gradient(135deg, #cd7f32 0%, #e4a672 100%);
+  background: linear-gradient(135deg, #FFD56B 0%, #FFA85C 100%);
   color: #5c3a1a;
 }
 
@@ -122,59 +100,47 @@
   font-size: 1.2rem;
   font-weight: bold;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .first-base {
-  height: 120px;
-  background: linear-gradient(180deg, #ffd700 0%, #ffed4e 100%);
+  height: 200px;
+  background: linear-gradient(180deg, #FFE8A3 0%, #FFB6D9 100%);
   color: #8b6914;
-  line-height: 90px;
 }
 
 .second-base {
-  height: 90px;
-  background: linear-gradient(180deg, #c0c0c0 0%, #e8e8e8 100%);
+  height: 150px;
+  background: linear-gradient(180deg, #B8F3D8 0%, #A8D8EA 100%);
   color: #4a4a4a;
-  line-height: 60px;
 }
 
 .third-base {
-  height: 70px;
-  background: linear-gradient(180deg, #cd7f32 0%, #e4a672 100%);
+  height: 120px;
+  background: linear-gradient(180deg, #FFD56B 0%, #FFA85C 100%);
   color: #5c3a1a;
-  line-height: 40px;
 }
 
 /* 시상대 순서 조정 */
 .podium-item.first {
   order: 2;
-  animation-delay: 0.2s;
 }
 
 .podium-item.second {
   order: 1;
-  animation-delay: 0s;
 }
 
 .podium-item.third {
   order: 3;
-  animation-delay: 0.4s;
 }
 
 /* 테이블 컨테이너 */
 .ranking-table-container {
   width: 100%;
   max-width: 800px;
-  animation: fadeIn 0.8s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .ranking-table {
@@ -218,50 +184,20 @@
   border-bottom: none;
 }
 
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-  .ranking-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
+.First {
+  width: 4rem;
+  position: relative;
+  top: -90px;
+}
 
-  .podium-container {
-    gap: 10px;
-    margin-bottom: 40px;
-  }
+.Second {
+  width: 4rem;
+  position: relative;
+  top: -145px;
+}
 
-  .podium-base {
-    width: 100px;
-  }
-
-  .user-info {
-    min-width: 100px;
-    padding: 15px;
-  }
-
-  .user-name {
-    font-size: 1rem;
-  }
-
-  .user-score {
-    font-size: 0.9rem;
-  }
-
-  .first-base {
-    height: 100px;
-  }
-
-  .second-base {
-    height: 75px;
-  }
-
-  .third-base {
-    height: 60px;
-  }
-
-  .ranking-table th,
-  .ranking-table td {
-    padding: 12px 8px;
-    font-size: 1rem;
-  }
+.Third {
+  width: 4rem;
+  position: relative;
+  top: -60px;
 }

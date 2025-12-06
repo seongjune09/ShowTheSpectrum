@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/PeriodicTable" element={<PeriodicTable />} />
-        <Route path="/callback" element={<Callback />} />
+        <Route path="/oauth" element={<Callback />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/ranking" element={<Ranking />} />
       </Routes>

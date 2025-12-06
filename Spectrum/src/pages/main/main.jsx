@@ -11,7 +11,6 @@ import { handleLogin } from "../../api/LoginApi/Login";
 export default function Home() {
     const navigate = useNavigate();
 
-    // 임시 로그인 테스트용 (API 연결 전까지)
     const handleTestLogin = () => {
         navigate('/PeriodicTable');
     };
@@ -36,7 +35,7 @@ export default function Home() {
             <span className="M">M </span>
               계정으로 로그인
             </button>
-          
+
             <button className = "Login-Btn" onClick={handleTestLogin} style={{marginTop: '20px'}}>
             테스트 로그인 (임시)
             </button>

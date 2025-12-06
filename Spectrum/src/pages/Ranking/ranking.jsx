@@ -31,8 +31,6 @@ export default function Ranking() {
 
   // 1-3등 (시상대)
   const topThree = rankings.slice(0, 3);
-  // 4등 이하
-  const others = rankings.slice(3);
 
   return (
     <div className="ranking-container">
@@ -49,7 +47,10 @@ export default function Ranking() {
                 <div className="user-name">{topThree[1].name}</div>
                 <div className="user-score">{topThree[1].score}점</div>
               </div>
-              <div className="podium-base second-base">2nd</div>
+              <div className="podium-base second-base">
+                <img src="Second.png" alt="2등 이미지" className="First" />
+                2nd
+              </div>
             </div>
           )}
 
@@ -62,7 +63,10 @@ export default function Ranking() {
                 <div className="user-name">{topThree[0].name}</div>
                 <div className="user-score">{topThree[0].score}점</div>
               </div>
-              <div className="podium-base first-base">1st</div>
+              <div className="podium-base first-base">
+                <img src="First.png" alt="1등 이미지" className="Second" />
+                1st
+              </div>
             </div>
           )}
 
@@ -74,33 +78,12 @@ export default function Ranking() {
                 <div className="user-name">{topThree[2].name}</div>
                 <div className="user-score">{topThree[2].score}점</div>
               </div>
-              <div className="podium-base third-base">3rd</div>
+              <div className="podium-base third-base">
+                <img src="Third.png" alt="3등 이미지" className="Third" />
+                3rd
+              </div>
             </div>
           )}
-        </div>
-      )}
-
-      {/* 테이블 (4등 이하) */}
-      {others.length > 0 && (
-        <div className="ranking-table-container">
-          <table className="ranking-table">
-            <thead>
-              <tr>
-                <th>순위</th>
-                <th>이름</th>
-                <th>점수</th>
-              </tr>
-            </thead>
-            <tbody>
-              {others.map((user, index) => (
-                <tr key={index}>
-                  <td>{index + 4}</td>
-                  <td>{user.name}</td>
-                  <td>{user.score}점</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       )}
     </div>

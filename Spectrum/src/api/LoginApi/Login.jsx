@@ -1,6 +1,6 @@
 export const handleLogin = async () => {
     try {
-        const response = await fetch('http://121.146.223.228:8025/api/login', {
+        const response = await fetch('https://spectrum.blleaf.page/api/login', {
             method: 'GET',
             credentials: 'include',
             headers: {

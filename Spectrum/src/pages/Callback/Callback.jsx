@@ -28,7 +28,8 @@ export default function Callback() {
 
     const handleAuthCallback = async (code) => {
         try {
-            const response = await fetch(`http://121.146.223.228:8025/api/callback?code=${code}`, {
+            // 유저 데이터를 가져와 로그인 확인 후 주기율표로 이동
+            const response = await fetch('https://spectrum.blleaf.page/api/user', {
                 method: 'GET',
                 credentials: 'include',
                 headers: {
@@ -41,11 +42,14 @@ export default function Callback() {
             }
 
             const data = await response.json();
-            console.log('콜백 응답:', data);
+            console.log('유저 데이터:', data);
 
-            if (data.success) {
+            if (data.id && data.name) {
                 // 로그인 성공 시 주기율표로 이동
                 navigate('/PeriodicTable');
+            } else if (data.message) {
+                alert(data.message);
+                navigate('/');
             } else {
                 alert('로그인 처리 중 오류가 발생했습니다.');
                 navigate('/');
@@ -59,7 +63,7 @@ export default function Callback() {
 
     const checkSession = async () => {
         try {
-            const response = await fetch('http://121.146.223.228:8025/api/session', {
+            const response = await fetch('https://spectrum.blleaf.page/api/user', {
                 method: 'GET',
                 credentials: 'include',
                 headers: {
@@ -69,7 +73,7 @@ export default function Callback() {
 
             if (response.ok) {
                 const data = await response.json();
-                if (data.loggedIn) {
+                if (data.id && data.name) {
                     navigate('/PeriodicTable');
                     return;
                 }
