@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="450" height="165" viewBox="0 0 450 165" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="continuousSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D19FE8"/>
+      <stop offset="17%" stop-color="#B0BBDF"/>
+      <stop offset="33%" stop-color="#88CCFF"/>
+      <stop offset="50%" stop-color="#88FFAA"/>
+      <stop offset="67%" stop-color="#FFF088"/>
+      <stop offset="83%" stop-color="#FFBD88"/>
+      <stop offset="100%" stop-color="#FF8B94"/>
+    </linearGradient>
+    
+    <linearGradient id="edgeDarkening" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="10%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="90%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
+    </linearGradient>
+    
+    <mask id="absorptionMask">
+      <rect x="30" y="0" width="390" height="100" fill="white"/>
+      <rect x="64" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="70" y="0" width="1" height="100" fill="black"/>
+      <rect x="76" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="124" y="0" width="2" height="100" fill="black"/>
+      <rect x="132" y="0" width="2" height="100" fill="black"/>
+      <rect x="140" y="0" width="2" height="100" fill="black"/>
+      <rect x="182" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="190" y="0" width="2" height="100" fill="black"/>
+      <rect x="222" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="230" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="238" y="0" width="2" height="100" fill="black"/>
+      <rect x="296" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="350" y="0" width="1.5" height="100" fill="black"/>
+    </mask>
+  </defs>
+  
+  <rect width="450" height="165" fill="#F8F8F8"/>
+  
+  <text x="30" y="30" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+    지르코늄 흡수 스펙트럼
+  </text>
+  
+  <rect x="30" y="45" width="390" height="40" fill="url(#continuousSpectrum)" mask="url(#absorptionMask)"/>
+  <rect x="30" y="45" width="390" height="40" fill="url(#edgeDarkening)"/>
+  <rect x="30" y="45" width="390" height="40" fill="none" stroke="#CCC" stroke-width="1.5"/>
+  
+  <text x="30" y="105" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+    지르코늄 방출 스펙트럼
+  </text>
+  
+  <rect x="30" y="120" width="390" height="40" fill="#1A1A1A" stroke="#CCC" stroke-width="1.5"/>
+  
+  <rect x="64" y="120" width="0.5" height="40" fill="#D19FE8"/>
+  <rect x="70" y="120" width="1" height="40" fill="#D19FE8"/>
+  <rect x="76" y="120" width="0.5" height="40" fill="#D19FE8"/>
+  <rect x="124" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="132" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="140" y="120" width="2" height="40" fill="#88DDFF"/>
+  <rect x="182" y="120" width="2.5" height="40" fill="#88FFBB"/>
+  <rect x="190" y="120" width="2" height="40" fill="#88FFAA"/>
+  <rect x="222" y="120" width="2.5" height="40" fill="#88FFAA"/>
+  <rect x="230" y="120" width="2.5" height="40" fill="#AAFF88"/>
+  <rect x="238" y="120" width="2" height="40" fill="#CCFF88"/>
+  <rect x="296" y="120" width="2.5" height="40" fill="#FFF088"/>
+  <rect x="350" y="120" width="1.5" height="40" fill="#FFBD88"/>
+  
+  <rect x="30" y="120" width="390" height="40" fill="url(#edgeDarkening)"/>
+</svg>

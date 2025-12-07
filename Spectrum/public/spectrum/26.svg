@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="450" height="165" viewBox="0 0 450 165" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="continuousSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D19FE8"/>
+      <stop offset="17%" stop-color="#B0BBDF"/>
+      <stop offset="33%" stop-color="#88CCFF"/>
+      <stop offset="50%" stop-color="#88FFAA"/>
+      <stop offset="67%" stop-color="#FFF088"/>
+      <stop offset="83%" stop-color="#FFBD88"/>
+      <stop offset="100%" stop-color="#FF8B94"/>
+    </linearGradient>
+    
+    <linearGradient id="edgeDarkening" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="10%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="90%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
+    </linearGradient>
+    
+    <mask id="absorptionMask">
+      <rect x="30" y="0" width="390" height="100" fill="white"/>
+      <rect x="36" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="42" y="0" width="1" height="100" fill="black"/>
+      <rect x="48" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="54" y="0" width="1" height="100" fill="black"/>
+      <rect x="60" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="66" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="96" y="0" width="2" height="100" fill="black"/>
+      <rect x="104" y="0" width="2" height="100" fill="black"/>
+      <rect x="112" y="0" width="2" height="100" fill="black"/>
+      <rect x="120" y="0" width="2" height="100" fill="black"/>
+      <rect x="128" y="0" width="2" height="100" fill="black"/>
+      <rect x="154" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="162" y="0" width="2" height="100" fill="black"/>
+      <rect x="170" y="0" width="2" height="100" fill="black"/>
+      <rect x="194" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="202" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="210" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="218" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="226" y="0" width="2" height="100" fill="black"/>
+      <rect x="234" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="268" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="276" y="0" width="2" height="100" fill="black"/>
+      <rect x="284" y="0" width="1" height="100" fill="black"/>
+      <rect x="322" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="330" y="0" width="1" height="100" fill="black"/>
+      <rect x="368" y="0" width="1" height="100" fill="black"/>
+    </mask>
+  </defs>
+  
+  <rect width="450" height="165" fill="#F8F8F8"/>
+  
+  <text x="30" y="30" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+    철 흡수 스펙트럼
+  </text>
+  
+  <rect x="30" y="45" width="390" height="40" fill="url(#continuousSpectrum)" mask="url(#absorptionMask)"/>
+  <rect x="30" y="45" width="390" height="40" fill="url(#edgeDarkening)"/>
+  <rect x="30" y="45" width="390" height="40" fill="none" stroke="#CCC" stroke-width="1.5"/>
+  
+  <text x="30" y="105" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+    철 방출 스펙트럼
+  </text>
+  
+  <rect x="30" y="120" width="390" height="40" fill="#1A1A1A" stroke="#CCC" stroke-width="1.5"/>
+  
+  <rect x="36" y="120" width="0.5" height="40" fill="#D19FE8"/>
+  <rect x="42" y="120" width="1" height="40" fill="#D19FE8"/>
+  <rect x="48" y="120" width="0.5" height="40" fill="#D19FE8"/>
+  <rect x="54" y="120" width="1" height="40" fill="#D19FE8"/>
+  <rect x="60" y="120" width="0.5" height="40" fill="#D19FE8"/>
+  <rect x="66" y="120" width="0.5" height="40" fill="#D19FE8"/>
+  <rect x="96" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="104" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="112" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="120" y="120" width="2" height="40" fill="#88DDFF"/>
+  <rect x="128" y="120" width="2" height="40" fill="#88DDFF"/>
+  <rect x="154" y="120" width="2.5" height="40" fill="#88FFBB"/>
+  <rect x="162" y="120" width="2" height="40" fill="#88FFAA"/>
+  <rect x="170" y="120" width="2" height="40" fill="#88FFAA"/>
+  <rect x="194" y="120" width="2.5" height="40" fill="#88FFAA"/>
+  <rect x="202" y="120" width="2.5" height="40" fill="#AAFF88"/>
+  <rect x="210" y="120" width="2.5" height="40" fill="#CCFF88"/>
+  <rect x="218" y="120" width="2.5" height="40" fill="#DDFF88"/>
+  <rect x="226" y="120" width="2" height="40" fill="#EEFF88"/>
+  <rect x="234" y="120" width="2.5" height="40" fill="#F5FF88"/>
+  <rect x="268" y="120" width="2.5" height="40" fill="#FFF088"/>
+  <rect x="276" y="120" width="2" height="40" fill="#FFE888"/>
+  <rect x="284" y="120" width="1" height="40" fill="#FFE088"/>
+  <rect x="322" y="120" width="1.5" height="40" fill="#FFBD88"/>
+  <rect x="330" y="120" width="1" height="40" fill="#FFB088"/>
+  <rect x="368" y="120" width="1" height="40" fill="#FF9292"/>
+  
+  <rect x="30" y="120" width="390" height="40" fill="url(#edgeDarkening)"/>
+</svg>
