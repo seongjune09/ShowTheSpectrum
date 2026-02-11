@@ -1,8 +1,10 @@
 # 🌈 보여줄게 스펙트럼 !
 <img width="1456" height="829" alt="Image" src="https://github.com/user-attachments/assets/586263a2-e412-4853-8e6a-712e6f304536" />
 
+📅 2025.05 ~ 2025.12.14
 
-보여줄게 스펙트럼은 과학 시간에 진행한 첫 2인 팀 프로젝트입니다.
+
+보여줄게 스펙트럼은 과학 시간에 틈틈히 진행한 첫 2인 팀 프로젝트입니다.
 
 
 과학 수업에서 원소 스펙트럼을 찾을 때, 인터넷마다 정보가 달라 혼란스러웠던 경험에서 출발했습니다.
@@ -31,5 +33,23 @@
 
 <img width="1166" height="446" alt="Image" src="https://github.com/user-attachments/assets/440dbe47-9463-4760-95e3-10ab8514d998" />
 
+
+---
+
+## 팀원 소개
+
+|[박성준](https://github.com/seongjune09)|[강태은](https://github.com/Blue-Leaf-vm)|
+|:---:|:---:|
+|프론트엔드|백엔드|
+| <img width="130" src="https://github.com/user-attachments/assets/ace95578-2f8a-4e95-8755-d812a255278b">| <img width="130" src="https://github.com/user-attachments/assets/1a50f626-c0e8-4a9e-bc45-dbb5d6ffc6a2" />
+|스펙트럼 시각화, 퀴즈 UI 구현|DB 설계, API 개발|
+
+---
+
+## 🛠 기술 스택
+
+<img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" />   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" />   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" />
+
+---
 
 # [▶ 시연영상 확인하기](https://youtu.be/29QR2XS1F4k)
