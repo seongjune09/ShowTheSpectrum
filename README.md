@@ -53,3 +53,8 @@
 ---
 
 # [▶ 시연영상 확인하기](https://youtu.be/29QR2XS1F4k)
+
+---
+
+## 🔗 배포 링크
+[🌐 보여줄게 스펙트럼 바로가기](https://showthespectrum.vercel.app/) *(맥북 화면 기준)*
