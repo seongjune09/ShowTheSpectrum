@@ -44,7 +44,7 @@
 
 ---
 
-# 팀원 소개
+# 👥 팀원 소개
 
 |[박성준](https://github.com/seongjune09)|[강태은](https://github.com/Blue-Leaf-vm)|
 |:---:|:---:|
@@ -60,7 +60,7 @@
 
 ---
 
-# [▶ 시연영상 확인하기](https://youtu.be/29QR2XS1F4k)
+# [▶ 시연 영상 확인하기](https://youtu.be/29QR2XS1F4k)
 
 ---
 
