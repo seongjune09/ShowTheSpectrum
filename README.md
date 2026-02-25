@@ -13,7 +13,7 @@
 신뢰할 수 있는 데이터베이스를 기반으로, 누구나 정확한 원소 스펙트럼을 쉽고 빠르게 찾을 수 있는 플랫폼입니다.
 
 ---
-# 🔍 보여줄게 스펙트럼은 이런 서비스입니다.
+# 보여줄게 스펙트럼은 이런 서비스입니다.
 
 
 1. 118개의 모든 원소의 흡수 스펙트럼과 방출 스펙트럼을 보여주고, 신뢰할 수 있는 데이터베이스를 참고하여 믿고 사용할 수 있습니다. 또한 복잡한 원소 정보를 카드 형태로 정리하여 쉽게 이해할 수 있습니다.
@@ -36,7 +36,7 @@
 
 ---
 
-# 👍🏻 느낀 점 및 배운 점
+# 느낀 점 및 배운 점
    처음에는 팀원의 뛰어난 프론트엔드 실력 때문에 부담을 느꼈지만, 각자의 역할에 집중하며 소통한 결과 프로젝트를 성공적으로 마무리할 수 있었습니다.
    이 과정에서 단순한 개발 능력뿐 아니라 일정 조율과 의사결정을 경험하며 리더십의 중요성을 체감했습니다.
    또한 스펙트럼을 직접 설계하고 구현하는 데 많은 시간을 투자하며 프로젝트에 깊이 몰입할 수 있었고,
@@ -44,7 +44,7 @@
 
 ---
 
-# 👥 팀원 소개
+# 팀원 소개
 
 |[박성준](https://github.com/seongjune09)|[강태은](https://github.com/Blue-Leaf-vm)|
 |:---:|:---:|
@@ -54,7 +54,7 @@
 
 ---
 
-# 🛠 기술 스택
+# 기술 스택
 
 <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" />   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" />   <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" />
 
